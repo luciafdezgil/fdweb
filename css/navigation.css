@@ -1,0 +1,41 @@
+/* Estilos generales de la navegación */
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  transition: background 0.3s;
+}
+
+/* 🔹 :hover - Cambio de color al pasar el ratón */
+nav ul li a:hover {
+  background-color: #ff9800;
+  border-radius: 5px;
+}
+
+/* 🔹 :focus - Estilo al enfocar con teclado */
+nav ul li a:focus {
+  outline: 2px solid #4caf50;
+}
+
+/* 🔹 :nth-child() - Estilizar elementos específicos */
+nav ul li:nth-child(odd) a {
+  color: #ffeb3b; /* Amarillo para elementos impares */
+}

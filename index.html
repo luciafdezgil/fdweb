@@ -3,84 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi página chuli</title>
-  </head>
-  <head>
+    <title>Mi Página Chuli</title>
+    <meta
+      name="description"
+      content="Aprende HTML y desarrollo web con las mejores prácticas."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, desarrollo web, SEO, accesibilidad"
+    />
+    <meta name="author" content="Tu Nombre" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f0f4f7" />
     <link rel="stylesheet" href="./css/index.css" />
-  </head>
 
-  <meta
-    name="description"
-    content="Aprende HTML y desarrollo web con las mejores prácticas."
-  />
-  <meta
-    name="keywords"
-    content="HTML, CSS, desarrollo web, SEO, accesibilidad"
-  />
-  <meta name="author" content="Tu Nombre" />
-  <meta name="robots" content="index, follow" />
-  <head>
     <link
       rel="icon"
       type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
+      href="./assets/icons/favicon/favicon-96x96.png"
+      sizes="96x96"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/icons /favicon/favicon.ico"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/icons /favicon/favicon.ico"
+    />
+    <link rel="shortcut icon" href="./assets/icons /favicon/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
+      href="./assets/icons /favicon/apple-touch-icon.png"
     />
-    <link rel="manifest" href="assets/icons/site.webmanifest" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link
+      rel="manifest"
+      href="./assets/icons /favicon/web-app-manifest-512x512.png"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
+    <!-- Encabezado -->
     <header>
-      <h1>Mi Página Web</h1>
+      <h1><i class="fas fa-camera"></i> Mi Página Web</h1>
       <nav>
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- Sección principal -->
     <main>
-      <section id="Inicio">
-        <h2 class="emphasis"></h2>
-        <h2>Sobre nosotros.</h2>
-        <p>Bienvenido a nuestra página.</p>
+      <!-- Sección Sobre Nosotros -->
+      <section id="inicio">
+        <h2>Sobre Nosotros</h2>
+        <p>
+          Bienvenido a nuestra página. Aquí aprenderás sobre nuestros productos
+          y servicios, diseñados especialmente para ti.
+        </p>
       </section>
-      <section id="productos"></section>
-      <h2 class="emphasis">Sobre nuestros productos.</h2>
-      <p>Son buenísimos.</p>
-      <img
-        width="700"
-        height="270"
-        src="./assets/images/foto.webp"
-        alt="Descripción de la imagen"
-      />
-      <video controls width="700">
-        <source
-          width="700"
-          height="270"
-          src="./assets/videos/video1.mov"
-          type="video/mp4"
-        />
-      </video>
-      <div class="contenedor">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-      </div>
+
+      <!-- Sección Productos -->
+      <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <p>
+          Ofrecemos productos de alta calidad, fabricados con los mejores
+          materiales. ¡Te encantarán!
+        </p>
+
+        <div class="producto-imagen">
+          <img
+            width="700"
+            height="270"
+            src="./assets/images/foto.webp"
+            alt="Descripción del producto"
+          />
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="producto" /> Marcar este producto
+          </label>
+        </div>
+
+        <div class="contenedor">
+          <div class="item">Producto 1</div>
+          <div class="item">Producto 2</div>
+          <div class="item">Producto 3</div>
+        </div>
+      </section>
+
+      <!-- Sección Contacto -->
+      <section id="contacto">
+        <h2>Contacto</h2>
+      </section>
     </main>
 
+    <!-- Pie de página -->
     <footer>
       <p>&copy; 2025 Mi Web</p>
     </footer>
-  </body>
-
-  <body>
-    <p>Estoy muy feliz.</p>
   </body>
 </html>
