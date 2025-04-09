@@ -1,0 +1,100 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #e6f7ec;
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2e7d32;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #1b5e20;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #388e3c;
+}
+
+.sitio {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sitio h2 {
+  color: #1b5e20;
+  margin-top: 0;
+}
+
+.sitio a {
+  display: inline-block;
+  margin: 0.5rem 0 1rem;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sitio a:hover {
+  text-decoration: underline;
+}
+
+/* Imágenes completamente responsivas */
+.sitio img {
+  width: 100%;
+  height: auto; /* Mantener la relación de aspecto */
+  margin-bottom: 1rem;
+  border-radius: 20px;
+}
+
+/* Contenedor de imágenes con flexbox, adaptado para responsividad */
+.imagenes-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten cuando el espacio se reduzca */
+  justify-content: space-between; /* Distribuye las imágenes con espacio entre ellas */
+  gap: 20px; /* Espacio entre las imágenes */
+}
+
+/* Imágenes pequeñas en pantallas grandes (por ejemplo, 50% del ancho del contenedor) */
+.imagenes-container img {
+  width: 48%; /* Asegura que las imágenes no ocupen más del 50% del contenedor */
+  /* Se puede ajustar a un tamaño más pequeño si es necesario */
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .imagenes-container {
+    gap: 15px; /* Reducir el espacio entre las imágenes */
+  }
+
+  .sitio img {
+    max-width: 100%; /* Asegurarse de que las imágenes no excedan el contenedor */
+  }
+}
+
+@media (max-width: 480px) {
+  .imagenes-container {
+    flex-direction: column; /* Las imágenes se apilan en dispositivos pequeños */
+    align-items: center; /* Centrar las imágenes cuando se apilan */
+  }
+
+  .sitio img {
+    max-width: 100%; /* Asegurarse de que las imágenes no sean más grandes que su contenedor */
+  }
+}
