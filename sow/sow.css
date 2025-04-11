@@ -55,46 +55,41 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Imágenes completamente responsivas */
 .sitio img {
   width: 100%;
-  height: auto; /* Mantener la relación de aspecto */
+  height: auto;
   margin-bottom: 1rem;
   border-radius: 20px;
 }
 
-/* Contenedor de imágenes con flexbox, adaptado para responsividad */
 .imagenes-container {
   display: flex;
-  flex-wrap: wrap; /* Permite que las imágenes se ajusten cuando el espacio se reduzca */
-  justify-content: space-between; /* Distribuye las imágenes con espacio entre ellas */
-  gap: 20px; /* Espacio entre las imágenes */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-/* Imágenes pequeñas en pantallas grandes (por ejemplo, 50% del ancho del contenedor) */
 .imagenes-container img {
-  width: 48%; /* Asegura que las imágenes no ocupen más del 50% del contenedor */
-  /* Se puede ajustar a un tamaño más pequeño si es necesario */
+  width: 48%;
 }
 
-/* Responsividad para pantallas más pequeñas */
 @media (max-width: 768px) {
   .imagenes-container {
-    gap: 15px; /* Reducir el espacio entre las imágenes */
+    gap: 15px;
   }
 
   .sitio img {
-    max-width: 100%; /* Asegurarse de que las imágenes no excedan el contenedor */
+    max-width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .imagenes-container {
-    flex-direction: column; /* Las imágenes se apilan en dispositivos pequeños */
-    align-items: center; /* Centrar las imágenes cuando se apilan */
+    flex-direction: column;
+    align-items: center;
   }
 
   .sitio img {
-    max-width: 100%; /* Asegurarse de que las imágenes no sean más grandes que su contenedor */
+    max-width: 100%;
   }
 }
