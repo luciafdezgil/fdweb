@@ -1,0 +1,23 @@
+{
+  "name": "Portfolio de Lucía Fernández-Gil",
+  "short_name": "Portfolio Lucía",
+  "description": "Diseñadora, directora de arte y fotógrafa. Un vistazo a mis proyectos y estilo visual.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fff9f9",
+  "theme_color": "#ffcedd",
+  "orientation": "portrait",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "assets/icon/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
