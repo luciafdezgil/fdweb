@@ -18,7 +18,7 @@ Este es mi portfolio digital personal, una página web donde muestro una selecci
 
 ---
 
-## 📂 Estructura del proyecto
+## Estructura del proyecto
 
 mi-portfolio-digital/
 │
@@ -61,7 +61,15 @@ Puedes ver el portfolio en línea aquí:
 
 ---
 
-## 📝 Créditos
+## Créditos
 
 Proyecto realizado por **Lucía Fernández-Gil** como portfolio personal.  
 Todos los contenidos y recursos visuales han sido creados o seleccionados por la autora.
+
+---
+
+## Licencia
+
+Este proyecto está licenciado bajo la [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+© 2025 Lucía Fernández-Gil. Todos los derechos reservados.
