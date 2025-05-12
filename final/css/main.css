@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+@font-face {
+  font-family: "CorporateACondPro";
+  src: url("../assets/fonts/CorporateACondPro-Regular.woff2") format("woff2"),
+    url("../assets/fonts/CorporateACondPro-Regular.woff") format("woff"),
+    url("../assets/fonts/CorporateACondPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -71,11 +79,11 @@ body {
 }
 
 .presentacion h1 {
+  font-family: "CorporateACondPro", serif;
   font-size: 4rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-weight: 700;
   letter-spacing: 2px;
-  margin-bottom: 1rem;
 }
 
 .presentacion p {
