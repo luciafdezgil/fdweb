@@ -1,0 +1,208 @@
+/* VARIABLES GENERALES */
+:root {
+  --rosa-claro: #ffcedd;
+  --rosa-hover: #f9b7c4;
+  --gris: #333;
+  --negro: #1a1a1a;
+  --blanco: #ffffff;
+}
+
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FUENTE GLOBAL */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff9f9;
+  color: var(--gris);
+  margin: 0;
+  padding: 0;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--blanco);
+  border-bottom: 2px solid #ccc;
+  padding: 1rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--gris);
+  font-size: 1rem;
+  text-transform: lowercase;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: var(--rosa-hover);
+}
+
+/* TÍTULOS GENERALES */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* BOTONES GENERALES */
+button,
+.ver-mas,
+.boton {
+  display: inline-block;
+  background-color: var(--rosa-claro);
+  color: var(--negro);
+  border: 2px solid var(--negro);
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover,
+.ver-mas:hover,
+.boton:hover {
+  background-color: var(--negro);
+  color: var(--rosa-claro);
+}
+
+/* ANIMACIONES GLOBALES */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ESTILOS DE SECCIONES GENÉRICAS */
+.presentacion,
+.areas-de-trabajo,
+.frase-final {
+  opacity: 0;
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+.frase-final {
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #888;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* FORMULARIO DE CONTACTO */
+input,
+textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* CLASES DE USO FRECUENTE */
+.info-oculta {
+  display: none;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.info-oculta.visible {
+  display: block;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.instagram {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.instagram a {
+  color: #c13584;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* CONTENEDOR GENÉRICO */
+.contenedor {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* ESTILOS PARA CÓDIGO DE ERROR 404 */
+.codigo {
+  font-size: 10rem;
+  font-weight: 700;
+  color: var(--negro);
+}
+
+.mensaje {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
