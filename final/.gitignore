@@ -1,0 +1,31 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Carpetas del sistema
+__MACOSX/
+
+# Archivos temporales / caché
+*.log
+*.tmp
+*.swp
+
+# Node.js (por si en el futuro usas npm)
+node_modules/
+dist/
+build/
+
+# Archivos ocultos de editores
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Archivos de despliegue personal o backups
+*.bak
+*.old
+*.orig
+
+# Archivos personales o locales
+.env
+.env.local
