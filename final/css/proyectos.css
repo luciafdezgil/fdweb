@@ -57,7 +57,7 @@ h1 {
   margin-bottom: 3rem;
 }
 
-.proyecto {
+details.proyecto {
   background-color: var(--rosa-claro);
   border-radius: 20px;
   padding: 3rem;
@@ -66,8 +66,17 @@ h1 {
   transition: transform 0.3s;
 }
 
-.proyecto:hover {
+details.proyecto[open] {
   transform: translateY(-5px);
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 .titulo-proyecto {
@@ -104,7 +113,7 @@ h1 {
   transform: scale(1.05);
 }
 
-.ver-mas {
+.ver-mas span {
   display: inline-block;
   background-color: white;
   border: 2px solid var(--gris);
@@ -112,23 +121,19 @@ h1 {
   padding: 0.7rem 1.2rem;
   font-weight: bold;
   cursor: pointer;
+  margin-top: 1rem;
   transition: background-color 0.3s, color 0.3s;
 }
 
-.ver-mas:hover {
+.ver-mas span:hover {
   background-color: var(--gris);
   color: white;
 }
 
 .info-oculta {
-  display: none;
   margin-top: 1rem;
-  animation: fadeIn 0.5s ease forwards;
   font-size: 1.1rem;
-}
-
-.info-oculta.visible {
-  display: block;
+  animation: fadeIn 0.5s ease forwards;
 }
 
 @keyframes fadeIn {

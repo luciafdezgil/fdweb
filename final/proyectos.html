@@ -12,15 +12,7 @@
     <link rel="icon" href="assets/icons/favicon-32x32.png" type="image/png" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#ffcedd" />
-
-    <script>
-      function toggleInfo(id) {
-        const info = document.getElementById(id);
-        info.classList.toggle("visible");
-      }
-    </script>
   </head>
-
   <body>
     <nav class="menu">
       <ul>
@@ -34,35 +26,39 @@
     <section id="proyectos">
       <h1>mis proyectos</h1>
 
-      <div class="proyecto">
-        <div class="titulo-proyecto">
-          <img src="assets/fotos/pinrreles.png" alt="Título Proyecto 1" />
-        </div>
-        <div class="galeria">
-          <img src="assets/fotos/pinrreles1.png" alt="Pinreles 1" />
-          <img src="assets/fotos/pinrreles2.png" alt="Pinreles 2" />
-          <img src="assets/fotos/pinrreles3.png" alt="Pinreles 3" />
-        </div>
-        <button class="ver-mas" onclick="toggleInfo('info1')">Ver más</button>
-        <div class="info-oculta" id="info1">
+      <details class="proyecto">
+        <summary class="ver-mas">
+          <div class="titulo-proyecto">
+            <img src="assets/fotos/pinrreles.png" alt="Título Proyecto 1" />
+          </div>
+          <div class="galeria">
+            <img src="assets/fotos/pinrreles1.png" alt="Pinreles 1" />
+            <img src="assets/fotos/pinrreles2.png" alt="Pinreles 2" />
+            <img src="assets/fotos/pinrreles3.png" alt="Pinreles 3" />
+          </div>
+          <span>Ver más</span>
+        </summary>
+        <div class="info-oculta">
           <p>
             este proyecto se centra en el diseño de una web de calcetines que
             combine comodidad, naturalidad y un enfoque emocional.
           </p>
         </div>
-      </div>
+      </details>
 
-      <div class="proyecto">
-        <div class="titulo-proyecto">
-          <img src="assets/fotos/raiz.png" alt="Título Proyecto 2" />
-        </div>
-        <div class="galeria">
-          <img src="assets/fotos/raiz1.png" alt="Raíz 1" />
-          <img src="assets/fotos/raiz2.png" alt="Raíz 2" />
-          <img src="assets/fotos/raiz3.png" alt="Raíz 3" />
-        </div>
-        <button class="ver-mas" onclick="toggleInfo('info2')">Ver más</button>
-        <div class="info-oculta" id="info2">
+      <details class="proyecto">
+        <summary class="ver-mas">
+          <div class="titulo-proyecto">
+            <img src="assets/fotos/raiz.png" alt="Título Proyecto 2" />
+          </div>
+          <div class="galeria">
+            <img src="assets/fotos/raiz1.png" alt="Raíz 1" />
+            <img src="assets/fotos/raiz2.png" alt="Raíz 2" />
+            <img src="assets/fotos/raiz3.png" alt="Raíz 3" />
+          </div>
+          <span>Ver más</span>
+        </summary>
+        <div class="info-oculta">
           <p>
             un diseño minimalista y colores suaves que inspiran calma. la app
             integra deporte, nutrición y terapia en un espacio intuitivo y
@@ -71,28 +67,30 @@
             bienestar integral.
           </p>
         </div>
-      </div>
+      </details>
 
-      <div class="proyecto">
-        <div class="titulo-proyecto" style="text-align: left">
-          <h2 style="margin-left: 0">feminidad oscura</h2>
-        </div>
-        <div class="galeria" style="justify-content: center">
-          <img src="assets/fotos/foto3.JPG" alt="Cielo 1" />
-          <img src="assets/fotos/foto1.JPG" alt="Cielo 2" />
-          <img src="assets/fotos/foto2.JPG" alt="Cielo 3" />
-        </div>
-        <button class="ver-mas" onclick="toggleInfo('info3')">Ver más</button>
-        <div class="info-oculta" id="info3">
+      <details class="proyecto">
+        <summary class="ver-mas">
+          <div class="titulo-proyecto" style="text-align: left">
+            <h2 style="margin-left: 0">feminidad oscura</h2>
+          </div>
+          <div class="galeria" style="justify-content: center">
+            <img src="assets/fotos/foto3.JPG" alt="Cielo 1" />
+            <img src="assets/fotos/foto1.JPG" alt="Cielo 2" />
+            <img src="assets/fotos/foto2.JPG" alt="Cielo 3" />
+          </div>
+          <span>Ver más</span>
+        </summary>
+        <div class="info-oculta">
           <p>
-            una serie de fotografias intensas y enigmáticas que exploran la
+            una serie de fotografías intensas y enigmáticas que exploran la
             feminidad desde su lado más oscuro y poderoso. a través de luces
             tenues, contrastes marcados y miradas profundas, estas fotografías
             capturan la esencia de una mujer que no teme su sombra: misteriosa,
-            fuerte, sensual y libre,
+            fuerte, sensual y libre.
           </p>
         </div>
-      </div>
+      </details>
     </section>
   </body>
 </html>

@@ -96,3 +96,21 @@
       .menu a:hover {
         color: #ffcedd;
       }
+      @media (max-width: 600px) {
+       }
+       .codigo {
+    font-size: 5rem;
+  }
+
+  .mensaje {
+    font-size: 1.2rem;
+  }
+
+  .boton {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .contenedor {
+    padding: 1rem;
+  }
